@@ -4,7 +4,7 @@ const textes = [
      target="_blank" class="text-decoration-none">BTS SIO</a> option
    <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
      target="_blank" class="text-decoration-none">SLAM</a>`,
-  "- En recherche d'un stage du <strong>5 janvier</strong> au <strong>13 février 2026</strong> -"
+  "- En recherche d'une alternance -"
 ];
 
 const delays = [8000, 2000];

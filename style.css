@@ -1,3 +1,12 @@
+/* Bootstrap overrides: */
+.bg-darkblue {
+  background-color: #005b7f;
+}
+
+.text-darkblue {
+  color: #005b7f;
+}
+
 .background-image {
     background-image: url('./ressource/illustration/coding-illustration.jpg');
     background-size: cover;
@@ -10,12 +19,12 @@
   filter: blur(1.5px);
 }
 
-.bg-darkblue {
-  background-color: #005b7f;
-}
-
-.text-darkblue {
-  color: #005b7f;
+#a-propos,
+#competences,
+#projets,
+#stages,
+#contacts {
+    scroll-margin-top: 65px;
 }
 
 .icon:hover {
@@ -94,4 +103,14 @@
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+.br-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .br-mobile {
+    display: block;
+  }
 }

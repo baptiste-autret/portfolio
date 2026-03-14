@@ -1,4 +1,3 @@
-
 const textes = [
   `Étudiant en <a href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur_-_Services_informatiques_aux_organisations"
      target="_blank" class="text-decoration-none">BTS SIO</a> option
@@ -18,13 +17,3 @@ function switchText() {
 }
 
 switchText();
-
-function scrollToSection(sectionId) {
-    
-    const section = document.getElementById(sectionId);
-    
-    window.scrollTo({
-        top: section.offsetTop - 65,
-        behavior: 'smooth'
-    });
-}

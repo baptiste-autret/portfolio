@@ -1,4 +1,7 @@
-/* Bootstrap overrides: */
+/* ============================= */
+/* Bootstrap overrides */
+/* ============================= */
+
 .bg-darkblue {
   background-color: #005b7f;
 }
@@ -7,25 +10,137 @@
   color: #005b7f;
 }
 
-.background-image {
-    background-image: url('./ressource/illustration/coding-illustration.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(11px) brightness(30%);
-    transform: scale(1.1);
+
+/* ============================= */
+/* Layout général */
+/* ============================= */
+
+.br-mobile {
+  display: none;
 }
 
-.blur {
-  filter: blur(1.5px);
+@media (max-width: 768px) {
+  .br-mobile {
+    display: block;
+  }
 }
+
+
+/* ============================= */
+/* Sections */
+/* ============================= */
 
 #a-propos,
 #competences,
 #projets,
 #stages,
 #contacts {
-    scroll-margin-top: 65px;
+  scroll-margin-top: 65px;
 }
+
+
+/* ============================= */
+/* Cards / Projets / Stages */
+/* ============================= */
+
+.carte {
+  transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.carte:hover {
+  filter: drop-shadow(0px 0px 12px #b9b6e7);
+  transform: translate(0,-5px);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .row {
+  margin-top: auto;
+}
+
+
+/* ============================= */
+/* Badges logiciels */
+/* ============================= */
+
+.badges-logiciels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.badge-tech {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.95rem 0.4rem 0.75rem;
+  border-radius: 7px;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: default;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
+.badge-tech:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.badge-vscode {
+  background-color: #02375a;
+}
+
+.badge-androidstudio {
+  background-color: #005207;
+}
+
+.badge-eclipse {
+  background-color: #2d0568;
+}
+
+.badge-phpmyadmin {
+  background-color: #8f5805;
+}
+
+
+/* ============================= */
+/* Images */
+/* ============================= */
+
+.user-pfp {
+  padding: 2.5px;
+}
+
+.image-competences {
+  user-select: none;
+}
+
+.blur {
+  filter: blur(1.5px);
+}
+
+.background-image {
+  background-image: url('./ressource/illustration/coding-illustration.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(11px) brightness(30%);
+  transform: scale(1.1);
+}
+
+
+/* ============================= */
+/* Icônes */
+/* ============================= */
 
 .icon:hover {
   filter: drop-shadow(0px 0px 9px #adadad);
@@ -34,24 +149,10 @@
   transition: all 0.3s ease;
 }
 
-.carte {
-  transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
 
-.user-pfp {
-  padding: 2.5px;
-}
-
-.carte:hover {
-  filter: drop-shadow(0px 0px 12px #b9b6e7);
-  -webkit-transform:translate(0,-5px);
-  -ms-transform: translate(0,-5px);
-  transform: translate(0,-5px);
-}
-
-.image-competences {
-  user-select: none;
-}
+/* ============================= */
+/* Compétences / Marquee */
+/* ============================= */
 
 .marquee {
   overflow: hidden;
@@ -86,7 +187,6 @@
   background: linear-gradient(to left, rgba(248, 249, 250, 1), rgba(248, 249, 250, 0));
 }
 
-
 .skill {
   flex: 0 0 auto;
   text-align: center;
@@ -103,14 +203,4 @@
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
-}
-
-.br-mobile {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .br-mobile {
-    display: block;
-  }
 }

@@ -11,6 +11,7 @@
         content="Découvrez le portfolio de Baptiste Autret, étudiant en BTS SIO de 2 ème année, passionné par le développement informatique, la programmation et la cybersécurité.">
     <meta name="keywords"
         content="Baptiste Autret, portfolio, étudiant, Bretagne, BTS SIO, développement web, cybersécurité">
+    <meta name="robots" content="index, follow, noimageindex">
 
     <meta property="og:title" content="Baptiste Autret - Portfolio">
     <meta property="og:description"
@@ -86,6 +87,7 @@
                 Je m'appelle Baptiste, j'ai
                 19
                 ans et je vis dans le Finistère, en Bretagne.<br>
+                Je suis également véhiculé, ce qui me permet d'être mobile et autonome pour mes déplacements.<br>
                 Actuellement étudiant en BTS SIO (Services Informatiques aux Organisations) au lycée Saint-Louis à
                 Châteaulin, je me spécialise dans le développement informatique.<br>
             </p>
@@ -317,43 +319,67 @@
             <h2 class="text-primary fw-bold">Mes projets</h2>
             <div class="bg-primary rounded mb-4" style="width: 100%; height: 4px;"></div>
             <div class="row">
-                <div class="col-md-4">
+
+                <div class="col-md-4 mt-2 mb-3">
                     <div class="carte card shadow-sm h-100">
-                        <img src="ressource/illustration/illustration_salac.jpg" class="card-img-top"
-                            alt="Illustration du projet SALAC" data-nosnippet draggable="false">
+                        <img src="ressource/illustration/illustration_gsb_web.jpg" class="card-img-top"
+                            alt="Illustration du projet GSBFrais" data-nosnippet draggable="false">
                         <div class="card-body">
-                            <h5 class="card-title">Projet SALAC </h5>
-                            <p class="card-text">Création d'un site vitrine pour l'entreprise "SALAC" dans un
-                                contexte
-                                scolaire.<br></p>
+                            <h5 class="card-title">GSB - web</h5>
+                            <p class="card-text">Développement d'un site vitrine avec CodeIgniter 4, incluant une interface responsive et une structure MVC.<br></p>
                             <div class="row g-2">
                                 <div class="col-6">
-                                    <a href="#" class="btn btn-primary w-100 disabled" hidden>Documentation
-                                        technique</a>
-                                </div>
+                                    <a href="./documentation/technique/gsbWeb/docs/index.html" target="_blank" data-bs-toggle="tooltip" title="Documentation technique" class="btn btn-primary w-100"><i class="bi bi-gear"></i></a>
+                                </div> 
+                                <!-- https://docs.google.com/document/d/1mgA0soG5sXiuzjQ-eOjNhPl3VeOf48_rM6uNa-EEyNw/edit?usp=sharing -->
 
                                 <div class="col-6">
-                                    <a href="#" class="btn btn-primary w-100 disabled" hidden>Documentation
-                                        utilisateur</a>
+                                    <a href="https://docs.google.com/document/d/1yuOvVPI6xIVWfILuIEbqwNEeuI_Eq_VZ0wLQDkwSuSw/edit?usp=sharing" target="_blank" data-bs-toggle="tooltip" title="Documentation utilisateur" class="btn btn-primary w-100"><i
+                                            class="bi bi-file-earmark-text"></i></a>
                                 </div>
 
                                 <div class="col-12">
-                                    <a href="#" class="btn btn-primary w-100 disabled">Bientôt disponible</a>
+                                    <a href="https://github.com/baptiste-autret/gsb-frais-web" target="_blank" class="btn btn-dark w-100"><i class="bi bi-github"></i>
+                                        GitHub</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <br>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-4 mt-2 mb-3">
+                    <div class="carte card shadow-sm h-100">
+                        <img src="ressource/illustration/illustration_gsb_logiciel.jpg" class="card-img-top"
+                            alt="Illustration du projet GSBFrais" data-nosnippet draggable="false">
+                        <div class="card-body">
+                            <h5 class="card-title">GSB - logiciel</h5>
+                            <p class="card-text">Développement d'une application Java avec interface graphique (Swing) intégrant la gestion de données.<br></p>
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-primary w-100 disabled"><i class="bi bi-gear"></i></a>
+                                </div>
+
+                                <div class="col-6">
+                                    <a href="https://docs.google.com/document/d/1Gjq4hgzplENaGpicMEGrVAUQvHeLxVjv7_lnxR_AgkM/edit?usp=sharing" target="_blank" data-bs-toggle="tooltip" title="Documentation utilisateur (non terminée)" class="btn btn-primary w-100"><i
+                                            class="bi bi-file-earmark-text"></i></a>
+                                </div>
+
+                                <div class="col-12">
+                                    <a href="https://github.com/ybinctin/Projet-GSB-Java" target="_blank" class="btn btn-dark w-100 "><i class="bi bi-github"></i>
+                                        GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-2 mb-3" hidden>
                     <div class="carte card shadow-sm h-100">
                         <img src="ressource/illustration/illustration_le_coin_gourmand.jpg" class="card-img-top"
                             alt="Illustration du projet Le Coin Gourmand" data-nosnippet draggable="false">
                         <div class="card-body">
-                            <h5 class="card-title">Projet d'application</h5>
-                            <p class="card-text">Création d'une application lourde pour l'entreprise "Le Coin
-                                Gourmand"
-                                dans un contexte scolaire.</p>
+                            <h5 class="card-title">Le Coin Gourmand</h5>
+                            <p class="card-text">Développement d'une application C# pour “Le Coin Gourmand”, intégrant la gestion de données.</p>
                             <div class="row g-2">
                                 <div class="col-6">
                                     <a href="#" target="_blank" class="btn btn-primary w-100 disabled"><i
@@ -367,13 +393,36 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <a href="https://github.com/baptiste-autret/le-coin-gourmand-manager" target="_blank"
-                                        class="btn btn-dark w-100"><i class="bi bi-github"></i> GitHub</a>
+                                    <a href="https://github.com/baptiste-autret/le-coin-gourmand-manager"
+                                        target="_blank" class="btn btn-dark w-100"><i class="bi bi-github"></i>
+                                        GitHub</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <br>
+                </div>
+                
+                <div class="col-md-4 mt-2 mb-3">
+                    <div class="carte card shadow-sm h-100">
+                        <img src="ressource/illustration/illustration_rien.jpg" class="card-img-top"
+                            alt="Illustration du projet Le Coin Gourmand" data-nosnippet draggable="false">
+                        <div class="card-body">
+                            <h5 class="card-title">Authentification OTP</h5>
+                            <p class="card-text">Développement d'une application web en PHP permettant de créer un compte ou de se connecter via un système d'authentification OTP</p>
+                            <div class="row g-2">
+                                <div class="col-12">
+                                    <a href="https://docs.google.com/document/d/1cf84YOvjXIHhDE8OebeluIqEYwo6vFMCnKl9Jz9mVAc/edit?usp=sharing" target="_blank" data-bs-toggle="tooltip" title="Documentation technique" class="btn btn-primary w-100"><i
+                                            class="bi bi-gear"></i></a>
+                                </div>
+
+                                <div class="col-12">
+                                    <a href="https://github.com/baptiste-autret/authentification-otp"
+                                        target="_blank" class="btn btn-dark w-100"><i class="bi bi-github"></i>
+                                        GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -383,7 +432,7 @@
             <h2 class="text-primary fw-bold">Stages effectuées</h2>
             <div class="bg-primary rounded mb-4" style="width: 100%; height: 4px;"></div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mt-2 mb-3">
                     <div class="carte card shadow-sm h-100">
                         <img src="ressource/illustration/computer-illustration.jpg" class="card-img-top blur"
                             alt="Illustration du d'ordinateur avec du code" draggable="false" data-nosnippet>
@@ -416,7 +465,6 @@
 
                         </div>
                     </div>
-                    <br>
                 </div>
             </div>
         </section>
